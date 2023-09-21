@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signup">
+
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.traktez.findfalcon.ui.fragments.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/toBookList"
+            app:destination="@id/bookList"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/signup"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookList"
+        android:name="com.traktez.findfalcon.ui.fragments.BookListFragment"
+        tools:layout="@layout/fragment_find_falcon">
+        <action
+            android:id="@+id/toSignUp"
+            app:destination="@id/signup"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/bookList"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/toBookDetail"
+            app:destination="@id/bookDetail"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/bookDetail"
+        android:name="com.traktez.findfalcon.ui.fragments.BookDetailFragment"
+        tools:layout="@layout/fragment_book_detail">
+        <argument
+            android:name="bookEntity"
+            app:argType="com.traktez.findfalcon.data.entity.BookItemEntity"
+            app:nullable="false" />
+
+    </fragment>
+</navigation>

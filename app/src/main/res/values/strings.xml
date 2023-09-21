@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FIndFalcon</string>
+    <string name="find_falcon">Find Falcon</string>
+    <string name="time_taken">Time Taken :</string>
+    <string name="zero">0</string>
+    <string name="hours">Hours</string>
+    <string name="select_space_ship">Select space ship</string>
+    <string name="select">Select</string>
+    <string name="reset">Reset</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="already_has_account_login">Already has account? <font fgcolor='#FA5762'>Login</font></string>
+    <string name="dont_have_account_signup">Don\'t has account? <font fgcolor='#FA5762'>Sign Up</font></string>
+    <string name="select_country">Select country</string>
+    <string name="title">Title</string>
+    <string name="hits">Hits</string>
+    <string name="favs">Favs</string>
+    <string name="sample_text">lorem ep sum this is sample description about the book. please refer the detailed page for the more information.lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information.lorem ep sum this is sample description about the book. please refer the detailed page for the more information.lorem ep sum this is sample description about the book. please refer the detailed page for the more information.lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information. lorem ep sum this is sample description about the book. please refer the detailed page for the more information.lorem ep sum this is sample description about the book. please refer the detailed page for the more information.</string>
+    <string name="logout">Logout</string>
+    <string name="sort_by">Sort by:</string>
+    <string name="summary">Summary :</string>
+</resources>
