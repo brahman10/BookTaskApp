@@ -25,11 +25,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment
+        val navHostFragment = (supportFragmentManager.findFragmentById(R.id.main_container) as NavHostFragment)
+        val inflater = navHostFragment.navController.navInflater
+        val graph = inflater.inflate(R.navigation.nav_graph)
         if (appPreference.username.isNotEmpty()) {
-            navHostFragment.navController.clearBackStack(R.id.signup)
-            navHostFragment.navController.navigate(R.id.bookList)
+            graph.setStartDestination(R.id.bookList)
+        }else{
+            graph.setStartDestination(R.id.signup)
         }
+        navHostFragment.navController.graph = graph
     }
 }
